@@ -19,8 +19,8 @@
           quantity: 2
         }],
       compared_product: 'recommended-banner-pants',  // custom property
-      content_type: 'product',
-      delivery_category: 'in_store'
+      content_type: ['local_service_business'],
+      language: "en_US",
     };
     fbq('track', event, params, {eventID: event_id});
     document.getElementById("event").innerHTML = event;

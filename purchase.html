@@ -18,8 +18,8 @@
           quantity: 2
         }],
       compared_product: 'recommended-banner-shoes',  // custom property
-      content_type: 'product',
-      delivery_category: 'in_store'
+      content_type: ['local_service_business'],
+      language: "en_US",
     };
     fbq('track', event, params);
     document.getElementById("event").innerHTML = event;
