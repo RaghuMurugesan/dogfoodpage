@@ -18,10 +18,10 @@
         }],
       content_type: 'local_service_business',
     };
+    fbq('trackCustom', 'ACustomEvent', {custom_param: 'custom_value'});
+    fbq('track', 'ViewContent', params, {eventID: new Date()});
     fbq('track', 'AddToCart', params);
     fbq('track', 'Purchase', params);
-    fbq('track', 'ViewContent', params, {eventID: new Date()});
-    fbq('trackCustom', 'ACustomEvent', {custom_param: 'custom_value'});
     document.getElementById("main").innerHTML = "Triggered";
   </script>
 </html>
